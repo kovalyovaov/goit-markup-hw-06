@@ -56,35 +56,36 @@
                         <use href="./images/icons.svg#icon-Vector-2"></use>
                     </svg>
                   </button>
+
                 <font>
-                  <b>Оставьте свои данные, мы вам перезвоним</b>
-                  <div>
-                      <label for="name">Имя</label>
-                    <input type="text" name="name" id="name">
+                  <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+                  <div class="form-field">
+                      <label for="name" class="modal-label">Имя</label>
+                    <input type="text" name="name" id="name" class="modal-input">
                 </div>
 
                 <div>
-                    <label for="tel">Телефон</label>
-                  <input type="text" name="tel" id="tel">
+                    <label for="tel" class="modal-label">Телефон</label>
+                  <input type="text" name="tel" id="tel" class="modal-input">
                 </div>
 
-                  <div>
-                      <label for="email">Почта</label>
-                    <input type="email" name="email" id="tel">
+                  <div class="form-field">
+                      <label for="email" class="modal-label">Почта</label>
+                    <input type="email" name="email" id="tel" class="modal-input">
                 </div>
                   
-                  <div>
-                    <label for="comment">Комментарий</label>
-                    <textarea name="comment" id="comment" rows="10"></textarea>
+                  <div class="form-field">
+                    <label for="comment" class="modal-label">Комментарий</label>
+                    <textarea name="comment" id="comment" rows="10" placeholder="Введите текст" class="modal-input-comment"></textarea>
                   </div>
 
                   <div>
-                    <input type="checkbox" name="policy" id="policy">
-                    <label for="policy">Соглашаюсь с рассылкой и принимаю Условия договора</label>
+                    <input type="checkbox" name="policy" id="policy" class="modal-policy">
+                    <label for="policy" class="modal-label-policy">Соглашаюсь с рассылкой и принимаю <a href="google.com">Условия договора</a></label>
                   </div>
 
 
-                  <button type="submit">Отправить</button>
+                  <button type="submit" class="modal-button">Отправить</button>
 
                 </font>
                 

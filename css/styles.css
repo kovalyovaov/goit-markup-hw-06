@@ -531,12 +531,13 @@ body {
 
 .modal {
   width: 528px;
-  height: 521px;
+  height: 581px;
   background-color: var(--btn-color);
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  padding: 40px;
 }
 
 .modal-btn {
@@ -551,7 +552,75 @@ body {
   cursor: pointer;
 }
 
+.modal-title {
+  font-style: 400;
+font-weight: 700;
+font-size: 20px;
+line-height: calc(23 / 20);
+text-align: center;
 
+color: var(--header-text-color);
+margin-bottom: 12px;
+}
+
+.modal-input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.modal-input-comment {
+resize: none;
+width: 100%;
+height: 120px;
+border: 1px solid rgba(33, 33, 33, 0.2);
+border-radius: 4px;
+padding: 12px 16px;
+margin-bottom: 20px;
+}
+
+.modal-label {
+font-style: 400;
+font-weight: 400;
+font-size: 12px;
+line-height: calc(14 / 12);
+color: var(--text-color);
+margin-bottom: 4px;
+display: flex;
+}
+
+.modal-button {
+  width: 200px;
+  height: 50px;
+  font-style: 400;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  display: block;
+  letter-spacing: 0.06em;
+  color: var(--btn-color);
+  background-color: var(--accent-color);
+text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  border: 1px solid var(--accent-color);
+border-radius: 4px;
+}
+
+.modal-policy {
+  margin-bottom: 30px;
+}
+
+.modal-label-policy {
+  font-style: 400;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+
+  color: var(--text-color);
+}
 
 /*-----------FOOTER---------------*/
 
