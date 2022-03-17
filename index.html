@@ -93,9 +93,15 @@
                     <textarea name="comment" id="comment" rows="10" placeholder="Введите текст" class="modal-input-comment"></textarea>
                   </div>
 
-                  <div>
-                    <input type="checkbox" name="policy" id="policy" class="modal-policy">
-                    <label for="policy" class="modal-label-policy">Соглашаюсь с рассылкой и принимаю <a href="google.com">Условия договора</a></label>
+                  <div class="form-checkbox">
+                    <input type="checkbox" name="policy" id="policy" class="modal-policy visually-hidden">
+                    <label for="policy" class="modal-label-policy">
+                        <span>
+                            <svg class="modal-check-icon">
+                                <use href="./images/icons.svg#icon-Vector-1"></use>
+                            </svg> 
+                        </span>
+                        Соглашаюсь с рассылкой и принимаю <a href="google.com">Условия договора</a></label>
                   </div>
 
 
@@ -426,6 +432,13 @@
                 </a>
             </li>
             </ul>
+        </div>
+        <div class="footer-sent">
+            <h2 class="footer-title">Подпишитесь на рассылку</h2>
+            <div class="footer-form">
+                <input type="email" name="email" placeholder="E-mail" class="footer-input"/>
+                <button type="submit" class="footer-btn">Подписаться</button>
+            </div>
         </div>
         </div>
     </footer>

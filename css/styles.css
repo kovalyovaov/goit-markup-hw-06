@@ -613,7 +613,7 @@ margin-bottom: 20px;
 outline: none;
 }
 
-.modal-input-comment:hover {
+.modal-input-comment:hover, .modal-input-comment:focus {
   border-color: var(--accent-color);
 }
 
@@ -654,9 +654,39 @@ border-radius: 4px;
   font-weight: 400;
   font-size: 14px;
   line-height: calc(24 / 14);
-
   color: var(--text-color);
+  display: flex;
+  align-items: center;
 }
+
+.modal-check-icon {
+  width: 16px;
+  height: 15px;
+  fill: transparent;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-label-policy span {
+width: 16px;
+height: 15px;
+border: 2px solid var(--header-text-color);
+border-radius: 2px;
+margin-right: 7px;
+margin-left: 15px;
+}
+
+.modal-policy:checked + .modal-label-policy > span {
+  background-color: var(--accent-color);
+  border: none;
+}
+
+.modal-policy:checked + .modal-label-policy svg {
+  fill: var(--btn-color);
+} 
+
+
+
 
 /*-----------FOOTER---------------*/
 
@@ -796,6 +826,74 @@ footer {
 .footer-social {
   margin-left: 70px;
 }
+
+/*--------ПОДПИШИТЕСЬ НА РАССЫЛКУ-----------*/
+
+.footer-sent {
+  margin-left: 93px;
+}
+
+.footer-form {
+  display: flex;
+}
+
+.footer-input {
+  width: 358px;
+height: 50px;
+border: 1px solid rgba(255, 255, 255, 0.3);
+border-radius: 4px;
+background-color: transparent;
+padding-left: 16px;
+
+font-style: 400;
+font-weight: 400;
+font-size: 16px;
+line-height: calc(20 / 16);
+
+display: flex;
+align-items: center;
+
+color: rgba(255, 255, 255, 0.6);
+
+}
+
+
+.footer-btn {
+margin-left: 12px;
+
+  width: 200px;
+  height: 50px;
+  font-style: 400;
+font-weight: 700;
+font-size: 16px;
+line-height: calc(30 / 16);
+display: flex;
+align-items: center;
+justify-content: center;
+color: var(--btn-color);
+background-color: var(--accent-color);
+cursor: pointer;
+
+}
+
+.footer-btn::after {
+  content: "";
+  background-image: url("/images/icon\ send.svg");
+  width: 24px;
+  height: 24px;
+  background-size: 24px 24px;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+  margin-left: 10px;
+
+}
+
+
+
+
+
+
 /*-------PORTFOLIO-----------*/
 
 .filtr-list {
