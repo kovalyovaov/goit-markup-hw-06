@@ -542,15 +542,20 @@ body {
 
 .modal-btn {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 8px;
+  right: 8px;
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  margin-top: 8px;
-  margin-right: 8px;
   cursor: pointer;
+  background: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
+
+.modal-btn-icon:hover {
+  fill: var(--accent-color);
+}
+
 
 .modal-title {
   font-style: 400;
@@ -563,9 +568,9 @@ color: var(--header-text-color);
 margin-bottom: 12px;
 }
 
-.form-field {
+/*.form-field {
   margin-bottom: 10px;
-}
+}*/
 
 .modal-input {
   width: 100%;
@@ -574,6 +579,7 @@ margin-bottom: 12px;
   border-radius: 4px;
   padding-left: 42px;
   outline: none;
+
   
 }
 
@@ -609,7 +615,6 @@ height: 120px;
 border: 1px solid rgba(33, 33, 33, 0.2);
 border-radius: 4px;
 padding: 12px 16px;
-margin-bottom: 20px;
 outline: none;
 }
 
@@ -625,6 +630,7 @@ line-height: calc(14 / 12);
 color: var(--text-color);
 margin-bottom: 4px;
 display: flex;
+margin-top: 10px;
 }
 
 .modal-button {
@@ -643,6 +649,7 @@ text-align: center;
   margin-left: auto;
   border: 1px solid var(--accent-color);
 border-radius: 4px;
+cursor: pointer;
 }
 
 .modal-policy {
@@ -657,6 +664,9 @@ border-radius: 4px;
   color: var(--text-color);
   display: flex;
   align-items: center;
+  margin-bottom: 30px;
+  justify-content: center;
+  margin-top: 20px;
 }
 
 .modal-check-icon {
@@ -667,13 +677,16 @@ border-radius: 4px;
   justify-content: center;
 }
 
+.modal-check-link {
+  color: var(--accent-color);
+  margin-left: 5px;
+}
 .modal-label-policy span {
 width: 16px;
 height: 15px;
 border: 2px solid var(--header-text-color);
 border-radius: 2px;
 margin-right: 7px;
-margin-left: 15px;
 }
 
 .modal-policy:checked + .modal-label-policy > span {
@@ -694,6 +707,10 @@ footer {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: #2f303a;
+}
+
+.footer-kontakt {
+  flex-grow: 1;
 }
 
 .footer-logo {
@@ -873,10 +890,17 @@ justify-content: center;
 color: var(--btn-color);
 background-color: var(--accent-color);
 cursor: pointer;
-
+border-radius: 4px;
+border-color: transparent;
+transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-btn::after {
+.footer-btn:hover, .footer-btn:focus{
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+
+/*.footer-btn::after {
   content: "";
   background-image: url("/images/icon\ send.svg");
   width: 24px;
@@ -887,6 +911,13 @@ cursor: pointer;
   display: inline-block;
   margin-left: 10px;
 
+}*/
+
+.footer-sent-icon {
+  width: 24px;
+  height: 24px;
+  fill: var(--btn-color);
+  margin-left: 10px;
 }
 
 
