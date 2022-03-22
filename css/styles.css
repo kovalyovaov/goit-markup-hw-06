@@ -558,7 +558,6 @@ body {
 
 
 .modal-title {
-  font-style: 400;
 font-weight: 700;
 font-size: 20px;
 line-height: calc(23 / 20);
@@ -568,9 +567,9 @@ color: var(--header-text-color);
 margin-bottom: 12px;
 }
 
-/*.form-field {
-  margin-bottom: 10px;
-}*/
+.form-field +.form-field {
+  margin-top: 10px;
+}
 
 .modal-input {
   width: 100%;
@@ -609,6 +608,7 @@ transform: translateY(-50%);
 }
 
 .modal-input-comment {
+  display: block;
 resize: none;
 width: 100%;
 height: 120px;
@@ -630,7 +630,7 @@ line-height: calc(14 / 12);
 color: var(--text-color);
 margin-bottom: 4px;
 display: flex;
-margin-top: 10px;
+/*margin-top: 10px;*/
 }
 
 .modal-button {
@@ -650,23 +650,27 @@ text-align: center;
   border: 1px solid var(--accent-color);
 border-radius: 4px;
 cursor: pointer;
+margin-top: 30px;
+}
+
+.form-checkbox {
+  margin-top: 20px;
 }
 
 .modal-policy {
-  margin-bottom: 30px;
+  /*margin-bottom: 30px;*/
 }
 
 .modal-label-policy {
-  font-style: 400;
-  font-weight: 400;
+  
   font-size: 14px;
   line-height: calc(24 / 14);
   color: var(--text-color);
   display: flex;
   align-items: center;
-  margin-bottom: 30px;
+  /*margin-bottom: 30px;*/
   justify-content: center;
-  margin-top: 20px;
+  /*margin-top: 20px;*/
 }
 
 .modal-check-icon {
